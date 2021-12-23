@@ -7,12 +7,6 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes: Quote[] = [
-
-    {id:1,name:'Maina'},
-    {id:2,name:'Susan'},
-    {id:3,name:'Rachel'},
-    
-  ];
+  title = 'Quotes'
   
 }
