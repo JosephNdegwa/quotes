@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuoteDetailComponent } from './quote-detail.component';
+import { LikeComponent } from './like.component';
 
-describe('QuoteDetailComponent', () => {
-  let component: QuoteDetailComponent;
-  let fixture: ComponentFixture<QuoteDetailComponent>;
+describe('LikeComponent', () => {
+  let component: LikeComponent;
+  let fixture: ComponentFixture<LikeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuoteDetailComponent ]
+      declarations: [ LikeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuoteDetailComponent);
+    fixture = TestBed.createComponent(LikeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
