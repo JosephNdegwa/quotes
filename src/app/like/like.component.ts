@@ -7,7 +7,7 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class LikeComponent implements OnInit {
 
-  numberOfLikes : number = 0;
+ @Input()numberOfLikes : number = 0;
 
     likeButtonClick() {
        this.numberOfLikes++;
