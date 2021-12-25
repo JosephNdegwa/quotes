@@ -2,8 +2,8 @@
     <div class="card-body">
         <h5 class="card-title">{{title}}</h5>
         <p class="card-text">{{content}}</p>
-        <app-like [numberOfLikes]= "postVotes"></app-like>
-        Post votes: {{postVotes}}
+        <app-like [numberOfLikes]= "postLikes" (change)="onPostLikesUpdate($event)"></app-like>
+        Post Votes: {{postLikes}}
     </div>
 
 </div>
