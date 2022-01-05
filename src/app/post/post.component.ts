@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
+  styleUrls: ['./post.component.css'],
 })
 export class PostComponent {
 
@@ -11,7 +12,7 @@ export class PostComponent {
 postLikes : number = 0;
 
 onPostLikesUpdate = function (event:any) {
-  this.postLikes = event;
+  //  this.postLikes = event;
 
 
 }

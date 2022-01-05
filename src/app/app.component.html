@@ -1,1 +1,7 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <input name="title" ngModel required #first="ngModel">
+    <input name="content" ngModel required>
+    <button>Submit</button>
+</form>
+
 <app-post></app-post>
