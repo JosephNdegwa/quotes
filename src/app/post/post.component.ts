@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-post',
@@ -16,6 +18,20 @@ onPostLikesUpdate = function (event:any) {
 
 
 }
+
+posts : object[];
+
+  constructor() {
+  this.posts = [];
+  }
+  onSubmit(f:any) {
+    let content = f.value.content;
+    let title = f.value.title;
+    this.posts.push({
+      'title' : title,
+      'content' : content
+    })
+  }
 
 
 
