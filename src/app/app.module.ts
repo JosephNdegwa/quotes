@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LikeComponent } from './like/like.component';
 import { PostComponent } from './post/post.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { PostComponent } from './post/post.component';
     AppComponent,
     LikeComponent,
     PostComponent,
+    FormComponent,
     
   ],
   imports: [
