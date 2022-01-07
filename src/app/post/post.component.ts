@@ -9,19 +9,18 @@ import { Quote } from '@angular/compiler';
 export class PostComponent {
 
  
-@Input() name!: string;
-@Input() content!: string;
-postLikes : number = 0;
 
+ @Input() name!: string;
+ @Input() content!: string;
+ postLikes : number = 0;
+ 
 onPostLikesUpdate = function (event:any) {
   //  this.postLikes = event;
 
 
 }
 
-addNewQuote(post:any){
-  
-}
+
 
 constructor() { }
 

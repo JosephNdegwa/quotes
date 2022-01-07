@@ -3,6 +3,7 @@ import { Quote } from '@angular/compiler';
 
 
 
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -10,7 +11,13 @@ import { Quote } from '@angular/compiler';
 })
 
 export class FormComponent implements OnInit {
+  
+ //newQuote = new Quote ("","");
+ @Output() addQuote = new EventEmitter<Quote>();
 
+ submitQuote(){
+  //this.addQuote.emit(this.newQuote);
+}
 
   constructor() { }
 
