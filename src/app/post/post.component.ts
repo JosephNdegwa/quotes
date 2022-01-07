@@ -10,8 +10,8 @@ export class PostComponent {
 
  
 
- @Input() name!: string;
- @Input() content!: string;
+ @Input() name!: any;
+ @Input() content!: any;
  postLikes : number = 0;
  
 onPostLikesUpdate = function (event:any) {

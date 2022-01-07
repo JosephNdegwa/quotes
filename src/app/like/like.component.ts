@@ -7,6 +7,8 @@ import { Component, Input, EventEmitter, Output} from '@angular/core';
 })
 export class LikeComponent {
 
+
+
  @Input()numberOfLikes : number = 0;
  @Output()
  change: EventEmitter<number> = new EventEmitter<number>();
