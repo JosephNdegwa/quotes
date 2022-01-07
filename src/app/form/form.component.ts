@@ -1,12 +1,16 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { PostComponent } from '../post/post.component';
+import { Quote } from '@angular/compiler';
+
+
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
+
 export class FormComponent implements OnInit {
+
 
   constructor() { }
 
