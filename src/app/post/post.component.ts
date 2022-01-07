@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { NgModel } from '@angular/forms';
+import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-post',
@@ -9,7 +8,8 @@ import { NgModel } from '@angular/forms';
 })
 export class PostComponent {
 
-@Input() title!: string;
+ 
+@Input() name!: string;
 @Input() content!: string;
 postLikes : number = 0;
 
@@ -19,20 +19,14 @@ onPostLikesUpdate = function (event:any) {
 
 }
 
-posts : object[];
+addNewQuote(post:any){
+  
+}
 
-  constructor() {
-  this.posts = [];
-  }
-  onSubmit(f:any) {
-    let content = f.value.content;
-    let title = f.value.title;
-    this.posts.push({
-      'title' : title,
-      'content' : content
-    })
-  }
+constructor() { }
 
+  ngOnInit() {
+  }
 
 
 }

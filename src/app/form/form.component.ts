@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { PostComponent } from '../post/post.component';
 
 @Component({
   selector: 'app-form',

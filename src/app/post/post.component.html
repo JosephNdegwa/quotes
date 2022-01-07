@@ -1,17 +1,16 @@
 <div class="centre">
 <h1>The following is a quote poll.</h1>
+<hr>
 </div>
-
-
-
 
 
 <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h5 class="card-title">{{title}}</h5>
-        <p class="card-text">{{content}}</p>
+        <h5 class="card-title">{{name}}</h5>
+        <h6 class="card-text">{{content}}</h6>
         <app-like  [numberOfLikes]= "postLikes" (change)="onPostLikesUpdate($event)"></app-like>
         Post Votes: {{postLikes}}
     </div>
 </div>
-<app-form></app-form>
+
+<app-form (addQuote)="addNewQuote($event)"></app-form>
