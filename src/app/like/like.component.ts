@@ -23,6 +23,6 @@ export class LikeComponent {
       this.change.emit(this.numberOfLikes);
     }
 
-  
+ 
 
 }

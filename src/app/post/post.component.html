@@ -9,13 +9,20 @@
         <div class="col-md-6">
         <h5>{{name}}</h5>
         <h6>{{content}}</h6>
-        <app-like  [numberOfLikes]= "postLikes" (change)="onPostLikesUpdate($event)"></app-like>
+        <app-like (change)="onPostLikesUpdate($event)"></app-like>
         
+        <div>
+        <ul>
+        <h5>{{addNewQuote}}</h5>
+        <h6>{{addNewQuote}}</h6>
+        
+        </ul>
         </div>
-    
+        </div>
+            
     
         <div class="col-md-6">
-            <app-form></app-form>
+            <app-form (addQuote)="onPostQuoteUpdate($event)" (addContent)="onPostQuoteUpdate"></app-form>
         </div>
     </div>
 </div>
