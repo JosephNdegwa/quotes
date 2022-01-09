@@ -1,4 +1,4 @@
-<h6 class="card-subtitle mb-2 text-muted"> - {{quoty.author}} <span id="when">Posted: {{quoty.datePosted|datePipe}} days ago.</span> </h6>
+<h6 class="card-subtitle mb-2 text-muted">  {{quoty.author}} <span id="when">Posted: {{quoty.datePosted|datePipe}} days ago.</span> </h6>
 <div class="container-fluid" id="buttons">
   <button class="btn btn-sm btn-success" (click)='upvote()'>Likes {{quoty.likes}}</button> 
   <button class="btn btn-sm btn-secondary" (click)='downvote()'>Dislikes {{quoty.dislikes}}</button> 
