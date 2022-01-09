@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import { Quote } from '@angular/compiler';
+import { Quote } from '../quote';
 
 
 
@@ -14,17 +14,13 @@ import { Quote } from '@angular/compiler';
 })
 
 export class FormComponent {
- @Input()newQuote = ("");
- @Input()newContent = ("");
+  quoted = new Quote(0,"","","","",new Date(),0,0);
+  @Output() add = new EventEmitter<Quote>();
 
- @Output()
- addQuote = new EventEmitter<any>();
- addContent =new EventEmitter<any>();
-submitButtonClick(Quote:any) {
-  this.addQuote.emit(this.newQuote);
-  this.addContent.emit(this.newContent)
-}
-
+  addQuote(){
+this.add.emit(this.quoted);
+this.quoted = new Quote(0,"","","","",new Date(),0,0);
+  }
 constructor() { }
 
  ngOnInit() {

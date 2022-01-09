@@ -1,27 +1,27 @@
-import { Component, Input, EventEmitter, Output} from '@angular/core';
-
+import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import { Quote } from '../quote';
 @Component({
   selector: 'app-like',
   templateUrl: './like.component.html',
   styleUrls: ['./like.component.css']
 })
-export class LikeComponent {
+export class LikeComponent implements OnInit {
 
-
-
- @Input()numberOfLikes : number = 0;
- @Output()
- change: EventEmitter<number> = new EventEmitter<number>();
-
-    likeButtonClick() {
-       this.numberOfLikes++;
-       this.change.emit(this.numberOfLikes);
+  @Input() quoty!: Quote;
+  @Output() isRead = new EventEmitter<boolean>();
+  deleteQuote(read:boolean){
+    this.isRead.emit(read);
   }
+  upvote(){
+    this.quoty.likes+=1;
+  }
+  downvote(){
+    this.quoty.dislikes+=1;
+  }
+  constructor() { }
 
-    dislikeButtonClick () {
-      this.numberOfLikes--;
-      this.change.emit(this.numberOfLikes);
-    }
+  ngOnInit() {
+  }
 
  
 
