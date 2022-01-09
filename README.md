@@ -1,5 +1,11 @@
 # Quotes
 
+### Author
+Joseph Ndegwa
+
+## Description
+This is a web app that collects quotes from users and other users can like them or dislike them.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
 ## Development server
@@ -25,3 +31,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Technologies 
+* Angular
+* HTML
+* Bootstrap
+* Javascript
+* VS Code
+
+## Contact
+* kariukindegwa98@gmail.com
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Copyright (C) {2022}

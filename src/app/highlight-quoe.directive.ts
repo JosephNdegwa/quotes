@@ -14,7 +14,7 @@ export class HighlightQuoeDirective {
     this.textDeco("danger")
   }
   private textDeco(action:string){
-    //this.elem.nativeElement.style.color=action;
+   
   }
 
 }
